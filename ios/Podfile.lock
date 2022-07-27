@@ -697,6 +697,13 @@ PODS:
     - React-jsi (= 0.69.2)
     - React-logger (= 0.69.2)
     - React-perflogger (= 0.69.2)
+  - rnmapbox-maps (10.0.0-beta.18):
+    - React
+    - React-Core
+    - rnmapbox-maps/DynamicLibrary (= 10.0.0-beta.18)
+  - rnmapbox-maps/DynamicLibrary (10.0.0-beta.18):
+    - React
+    - React-Core
   - SocketRocket (0.6.0)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
@@ -767,6 +774,7 @@ DEPENDENCIES:
   - React-rncore (from `../node_modules/react-native/ReactCommon`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "rnmapbox-maps (from `../node_modules/@rnmapbox/maps`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -862,6 +870,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  rnmapbox-maps:
+    :path: "../node_modules/@rnmapbox/maps"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -870,7 +880,7 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
   FBLazyVector: e3c1479be506060131807f2f2435af5107c58410
-  FBReactNativeSpec: 9fc7b13677bdbcf32e06b9cb44a9803449196563
+  FBReactNativeSpec: 1381e8c4230895b6c2d20cea6b216ac7096a95f0
   Flipper: 26fc4b7382499f1281eb8cb921e5c3ad6de91fe0
   Flipper-Boost-iOSX: fd1e2b8cbef7e662a122412d7ac5f5bea715403c
   Flipper-DoubleConversion: 2dc99b02f658daf147069aad9dbd29d8feb06d30
@@ -891,7 +901,7 @@ SPEC CHECKSUMS:
   React: 242d4ffb093ed57c4761307a69b23b2479930ae9
   React-bridging: 66938204bc9d703b9c357201a40bf498aeb14412
   React-callinvoker: bf0a87845bc3158eec32be848bd9546e79d6dd25
-  React-Codegen: 3fa23e9414b0043932608317852ba7e7aabf69d5
+  React-Codegen: 54ba45637454efdb3843bbbae0135b2bc430f2fe
   React-Core: 5acd5715010b56d23846859b3a68c316dad09d5b
   React-CoreModules: 73db18e3aaf5e29f73e4b7c9ddf6ead823795d06
   React-cxxreact: 0fc57a199d2d69c0e0401c9eab944be9b972bf1b
@@ -913,13 +923,14 @@ SPEC CHECKSUMS:
   React-RCTSettings: 028b0e20ff60d2c7ba47cedec8e99e69b6691c40
   React-RCTText: 6d17c2aead07b9de7ddc8765b580d0fb4b1d2e50
   React-RCTVibration: 0d07f00705b5f11e88aaaaf9131f5e1785d4bd6e
-  React-rncore: 1c2dfe96b19eb39cad522ce4ba2af55dc1836053
+  React-rncore: 2822da47b9911bd73866062a70557efce24c34fe
   React-runtimeexecutor: 8030b9cf9b9e87b878d92da680b55b5e74c58e70
   ReactCommon: a9414b91f0d19de002b55d9f4f6cb176d6dd8452
+  rnmapbox-maps: 286239faa59d054d51702509092e2f6d8573e987
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   Yoga: 236056dd74cda4d9d76c20306fd8c20bb087614d
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 6a28bbaaa319a2fb477f7e290ff2b363627df31f
+PODFILE CHECKSUM: 724d698e050c45d053bc9d4895b67115aaed69db
 
 COCOAPODS: 1.11.3
