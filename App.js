@@ -7,6 +7,7 @@ import {Map} from './src/components/Map/Map';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
+  const a = 1;
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
