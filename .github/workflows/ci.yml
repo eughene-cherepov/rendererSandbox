@@ -13,8 +13,8 @@ jobs:
     steps:
       - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
       - uses: actions/checkout@v2
-    - name: Install modules
-      run: yarn
-    - name: Run tests
-      run: yarn test
+      - name: Install modules
+      - run: yarn
+      - name: Run tests
+      - run: yarn test
       - run: echo "🍏 This job's status is ${{ job.status }}."
