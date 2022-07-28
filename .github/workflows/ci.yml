@@ -11,10 +11,10 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
-      # - uses: actions/checkout@v2
       - name: Install modules
-      - run: yarn
+        run: yarn
       - name: Run tests
-      - run: yarn test
+        run: yarn test
       - run: echo "🍏 This job's status is ${{ job.status }}."
