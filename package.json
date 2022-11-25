@@ -1,10 +1,11 @@
 {
-  "name": "newRenderer",
+  "name": "sandbox",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --simulator='iPhone 8' --configuration Debug",
+    "pods": "cd ios && pod install --project-directory=ios && cd ..",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint ."
